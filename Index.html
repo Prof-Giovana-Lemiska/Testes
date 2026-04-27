@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo</title>
+</head>
+<body>
+
+  <h2>Clique em um botão:</h2>
+
+  <button onclick="mostrarTexto(1)">Botão 1</button>
+  <button onclick="mostrarTexto(2)">Botão 2</button>
+  <button onclick="mostrarTexto(3)">Botão 3</button>
+
+  <p id="texto"></p>
+
+  <script>
+    function mostrarTexto(numero) {
+      if (numero === 1) {
+        document.getElementById("texto").innerText = "Texto do botão 1";
+      } else if (numero === 2) {
+        document.getElementById("texto").innerText = "Texto do botão 2";
+      } else {
+        document.getElementById("texto").innerText = "Texto do botão 3";
+      }
+    }
+  </script>
+
+</body>
+</html>
