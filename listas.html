@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mostrarTexto(1)">Listas 6° ano</button>
+    <button onclick="mostrarTexto(2)">Listas 7° ano</button>
+    <button onclick="mostrarTexto(3)">Listas 8° ano</button>
+    <button onclick="mostrarTexto(4)">Listas 9° ano</button>
+    <button onclick="mostrarTexto(5)">Listas 1° ano</button>
+    <button onclick="mostrarTexto(6)">Listas 2° ano</button>
+    <button onclick="mostrarTexto(7)">Listas 3° ano</button>
+
+    <script>
+        function mostrarTexto(numero) {
+      if (numero === 1) {
+        document.getElementById("texto").innerHTML = '<a href="./listas 9 ano/lista 03.html">Lista 3 - 9 ano</a>';
+      } else if (numero === 2) {
+        document.getElementById("texto").innerText = "Texto do botão 2";
+      } else {
+        document.getElementById("texto").innerText = "Texto do botão 3";
+      }
+    }
+    </script>
+</body>
+</html>
