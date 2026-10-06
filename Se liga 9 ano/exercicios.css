@@ -340,8 +340,15 @@ textarea::placeholder {
     }
 
     .formula {
-        padding: 14px 8px;
+        padding: 12px 8px;
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .formula mjx-container {
+        max-width: 100%;
         overflow-x: auto;
+        overflow-y: hidden;
     }
 }
 
