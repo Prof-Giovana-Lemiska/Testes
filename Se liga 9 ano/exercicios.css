@@ -177,10 +177,6 @@ body {
     transition: 0.2s ease;
 }
 
-.questao:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--sombra);
-}
 
 .numero {
     flex-shrink: 0;
@@ -327,10 +323,7 @@ textarea::placeholder {
     transition: 0.2s;
 }
 
-.final button:hover {
-    background: var(--principal-escura);
-    transform: translateY(-2px);
-}
+
 
 @media (max-width: 700px) {
 
@@ -401,7 +394,5 @@ textarea::placeholder {
         display: none;
     }
 
-    .questao:hover {
-        transform: none;
-    }
+
 }
