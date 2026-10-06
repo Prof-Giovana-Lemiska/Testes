@@ -43,10 +43,6 @@
         }
 
 
-        /* =====================================================
-           CAPA / HERO
-        ===================================================== */
-
         .capa {
             min-height: 390px;
 
@@ -80,9 +76,6 @@
             position: relative;
             overflow: hidden;
         }
-
-
-        /* Elementos decorativos */
 
         .forma {
             position: absolute;
@@ -159,11 +152,6 @@
             opacity: 0.82;
         }
 
-
-        /* =====================================================
-           CONTEÚDO
-        ===================================================== */
-
         .container {
             width: min(1100px, 92%);
             margin: 0 auto;
@@ -190,11 +178,6 @@
         .titulo-secao p {
             color: var(--texto-claro);
         }
-
-
-        /* =====================================================
-           TURMAS
-        ===================================================== */
 
         .turmas {
             display: grid;
@@ -272,10 +255,6 @@
             font-size: 0.9rem;
         }
 
-
-        /* =====================================================
-           TRIMESTRES
-        ===================================================== */
 
         .trimestres-container {
             margin-top: 45px;
@@ -427,7 +406,6 @@
         }
 
 
-        /* Cores dos trimestres */
 
         .primeiro {
             border-top: 5px solid var(--azul);
@@ -456,9 +434,6 @@
         }
 
 
-        /* =====================================================
-           RODAPÉ
-        ===================================================== */
 
         footer {
             text-align: center;
@@ -472,10 +447,6 @@
             font-size: 0.85rem;
         }
 
-
-        /* =====================================================
-           RESPONSIVIDADE
-        ===================================================== */
 
         @media (max-width: 700px) {
 
@@ -555,110 +526,119 @@
 
 
 
-            <!-- TURMAS -->
-
             <div class="turmas">
 
-                <button class="turma" onclick="mostrarTurma('7D')">
+                <button class="turma" onclick="mostrarTurma('7')">
 
                     <div class="icone-turma">
-                        7D
+                        7°
                     </div>
 
-                    <h3>7º D</h3>
+                    <h3>7º</h3>
 
                     <p>Matemática</p>
 
                 </button>
 
 
-                <button class="turma" onclick="mostrarTurma('7E')">
+                <button class="turma" onclick="mostrarTurma('8')">
 
                     <div class="icone-turma">
-                        7E
+                    8°
                     </div>
 
-                    <h3>7º E</h3>
+                    <h3>8°</h3>
 
                     <p>Matemática</p>
 
                 </button>
 
 
-                <button class="turma" onclick="mostrarTurma('7F')">
+                <button class="turma" onclick="mostrarTurma('9')">
 
                     <div class="icone-turma">
-                        7F
+                        9°
                     </div>
 
-                    <h3>7º F</h3>
+                    <h3>9°</h3>
 
                     <p>Matemática</p>
 
                 </button>
 
 
-                <button class="turma" onclick="mostrarTurma('8D')">
+                <button class="turma" onclick="mostrarTurma('1')">
 
                     <div class="icone-turma">
-                        8D
+                        1°
                     </div>
 
-                    <h3>8º D</h3>
+                    <h3>1º</h3>
 
                     <p>Matemática</p>
 
                 </button>
 
 
-                <button class="turma" onclick="mostrarTurma('8E')">
+                <button class="turma" onclick="mostrarTurma('2')">
 
                     <div class="icone-turma">
-                        8E
+                        2°
                     </div>
 
-                    <h3>8º E</h3>
+                    <h3>2º</h3>
 
                     <p>Matemática</p>
 
                 </button>
 
 
-                <button class="turma" onclick="mostrarTurma('9A')">
+                <button class="turma" onclick="mostrarTurma('3')">
 
                     <div class="icone-turma">
-                        9A
+                        3°
                     </div>
 
-                    <h3>9º A</h3>
+                    <h3>3º</h3>
 
                     <p>Matemática</p>
 
                 </button>
 
 
-                <button class="turma" onclick="mostrarTurma('9B')">
+                <button class="turma" onclick="mostrarTurma('1E')">
 
                     <div class="icone-turma">
-                        9B
+                        1°
                     </div>
 
-                    <h3>9º B</h3>
+                    <h3>1°</h3>
 
-                    <p>Matemática</p>
+                    <p>Ed. Financeira</p>
 
                 </button>
 
 
-                <button class="turma" onclick="mostrarTurma('9C')">
+                <button class="turma" onclick="mostrarTurma('2E')">
 
                     <div class="icone-turma">
-                        9C
+                        2°
                     </div>
 
-                    <h3>9º C</h3>
+                    <h3>2°</h3>
 
-                    <p>Matemática</p>
+                    <p>Ed. Financeira</p>
+
+                </button>
+                   <button class="turma" onclick="mostrarTurma('3E')">
+
+                    <div class="icone-turma">
+                        3°
+                    </div>
+
+                    <h3>3°</h3>
+
+                    <p>Ed. Financeira</p>
 
                 </button>
 
@@ -666,12 +646,9 @@
 
 
 
-            <!-- =================================================
-                 TRIMESTRES — 7D
-            ================================================== -->
 
             <div
-                id="7D"
+                id="7"
                 class="trimestres-container"
             >
 
@@ -680,7 +657,7 @@
                     <div class="cabecalho-turma">
 
                         <div>
-                            <h2>7º D</h2>
+                            <h2>7º</h2>
                             <p>Escolha o trimestre</p>
                         </div>
 
@@ -747,7 +724,7 @@
             ================================================== -->
 
             <div
-                id="7E"
+                id="8"
                 class="trimestres-container"
             >
 
@@ -756,7 +733,7 @@
                     <div class="cabecalho-turma">
 
                         <div>
-                            <h2>7º E</h2>
+                            <h2>8°</h2>
                             <p>Escolha o trimestre</p>
                         </div>
 
@@ -803,7 +780,7 @@
             ================================================== -->
 
             <div
-                id="7F"
+                id="9"
                 class="trimestres-container"
             >
 
@@ -812,7 +789,7 @@
                     <div class="cabecalho-turma">
 
                         <div>
-                            <h2>7º F</h2>
+                            <h2>9º</h2>
                             <p>Escolha o trimestre</p>
                         </div>
 
@@ -859,7 +836,7 @@
             ================================================== -->
 
             <div
-                id="8D"
+                id="1"
                 class="trimestres-container"
             >
 
@@ -868,7 +845,7 @@
                     <div class="cabecalho-turma">
 
                         <div>
-                            <h2>8º D</h2>
+                            <h2>1º</h2>
                             <p>Escolha o trimestre</p>
                         </div>
 
