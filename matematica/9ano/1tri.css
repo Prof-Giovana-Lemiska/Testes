@@ -5,381 +5,588 @@
 }
 
 :root {
-    --fundo: #f4f7fb;
-    --branco: #ffffff;
-    --texto: #1f2937;
-    --texto-suave: #64748b;
-    --borda: #e2e8f0;
-    --principal: #4f46e5;
-    --principal-escura: #3730a3;
-    --destaque: #f59e0b;
-    --sombra: 0 10px 30px rgba(15, 23, 42, 0.08);
+    --azul: #2563eb;
+    --azul-claro: #eff6ff;
+    --texto: #1e293b;
+    --cinza: #64748b;
+    --borda: #dbe2ea;
+    --fundo: #f5f7fa;
+    --branco: #fff;
 }
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--fundo);
     color: var(--texto);
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 15px;
 }
 
 .container {
-    width: min(1100px, 92%);
+    width: min(1000px, 92%);
     margin: 0 auto;
 }
 
 .cabecalho {
-    background: linear-gradient(
-        135deg,
-        var(--principal),
-        var(--principal-escura)
-    );
-
+    background: var(--azul);
     color: white;
-    padding: 50px 0;
     text-align: center;
-}
-
-.etiqueta {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 50px;
-    padding: 7px 16px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    padding: 42px 20px;
 }
 
 .cabecalho h1 {
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: 48px;
     line-height: 1;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    font-weight: 800;
 }
 
 .cabecalho p {
-    font-size: 1.25rem;
+    font-size: 17px;
 }
 
-.cabecalho .subtitulo {
-    margin-top: 8px;
-    font-size: 1rem;
-    opacity: 0.85;
-}
 
 .introducao {
     background: var(--branco);
-    margin: 35px 0;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: var(--sombra);
+    margin: 28px 0 35px;
+    padding: 28px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
 }
 
 .introducao h2 {
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .introducao p {
-    color: var(--texto-suave);
+    color: var(--cinza);
 }
 
 .informacoes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-top: 25px;
+    gap: 12px;
+    margin-top: 22px;
 }
 
 .informacoes div {
     text-align: center;
-    padding: 18px;
-    background: #f8fafc;
-    border-radius: 15px;
+    padding: 14px;
+    background: var(--azul-claro);
+    border-radius: 8px;
 }
 
 .informacoes strong {
     display: block;
-    color: var(--principal);
-    font-size: 1.8rem;
+    color: var(--azul);
+    font-size: 24px;
+    line-height: 1.2;
 }
 
 .informacoes span {
-    color: var(--texto-suave);
-    font-size: 0.9rem;
+    color: var(--cinza);
+    font-size: 13px;
 }
 
+
 .topico {
-    margin-bottom: 45px;
+    margin-bottom: 38px;
 }
 
 .topico-cabecalho {
     display: flex;
     align-items: center;
-    gap: 20px;
-    background: var(--branco);
-    padding: 25px;
-    border-radius: 20px 20px 0 0;
-    border-bottom: 3px solid var(--principal);
+    gap: 16px;
+
+    background: white;
+    padding: 18px 20px;
+
+    border: 1px solid var(--borda);
+    border-bottom: 3px solid var(--azul);
+    border-radius: 10px 10px 0 0;
 }
 
 .numero-topico {
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    min-width: 65px;
-    height: 65px;
-
-    border-radius: 18px;
-
-    background: var(--principal);
+    background: var(--azul);
     color: white;
 
-    font-size: 1.2rem;
+    border-radius: 10px;
+
+    font-size: 15px;
     font-weight: bold;
 }
 
 .categoria {
-    color: var(--principal);
-    font-size: 0.75rem;
+    display: block;
+
+    color: var(--azul);
+    font-size: 11px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: .8px;
+
+    margin-bottom: 2px;
 }
 
 .topico-cabecalho h2 {
-    font-size: 1.6rem;
+    font-size: 21px;
+    line-height: 1.2;
 }
 
 .topico-cabecalho p {
-    color: var(--texto-suave);
-    font-size: 0.9rem;
+    color: var(--cinza);
+    font-size: 13px;
 }
+
 
 .exercicios {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    padding-top: 12px;
+    gap: 8px;
+
+    padding-top: 8px;
 }
 
 .questao {
     display: flex;
-    gap: 20px;
+    gap: 14px;
 
-    background: var(--branco);
+    background: white;
+
     border: 1px solid var(--borda);
-    border-radius: 15px;
+    border-radius: 8px;
 
-    padding: 22px;
-
-    transition: 0.2s ease;
+    padding: 15px 16px;
 }
-
 
 .numero {
     flex-shrink: 0;
 
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    background: var(--azul-claro);
+    color: var(--azul);
+
     border-radius: 50%;
 
-    background: #eef2ff;
-    color: var(--principal);
-
+    font-size: 13px;
     font-weight: bold;
 }
 
 .conteudo {
     flex: 1;
+    min-width: 0;
 }
 
 .conteudo > p {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
+
 
 .itens {
     display: grid;
-    gap: 7px;
-    margin: 15px 0;
+    gap: 3px;
+    margin: 8px 0;
 }
 
 .alternativas {
     display: grid;
-    gap: 8px;
-    margin: 15px 0;
+    gap: 3px;
+    margin: 8px 0;
 }
+
+
+
 
 .formula {
     background: #f8fafc;
     border: 1px solid var(--borda);
-    border-radius: 10px;
 
-    padding: 18px;
-    margin: 15px 0;
+    border-radius: 6px;
+
+    padding: 10px 14px;
+    margin: 8px 0;
 
     text-align: center;
 
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 
 .observacao {
-    font-size: 0.9rem;
-    color: var(--texto-suave);
+    color: var(--cinza);
+    font-size: 13px;
     font-style: italic;
 }
+
 
 textarea {
     width: 100%;
     min-height: 80px;
 
-    margin-top: 12px;
-    padding: 12px 14px;
+    margin-top: 10px;
+    padding: 10px;
 
     resize: vertical;
 
     border: 1px solid var(--borda);
-    border-radius: 10px;
+    border-radius: 6px;
 
     font-family: inherit;
-    font-size: 0.95rem;
-
-    background: #fcfdff;
-
-    transition: 0.2s;
-}
-
-textarea:focus {
-    outline: none;
-    border-color: var(--principal);
-    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
-}
-
-textarea::placeholder {
-    color: #94a3b8;
+    font-size: 14px;
 }
 
 
 .final {
     text-align: center;
 
-    background: var(--branco);
+    background: white;
 
-    padding: 40px;
-    margin: 50px 0;
+    padding: 30px;
+    margin: 40px 0;
 
-    border-radius: 20px;
-
-    box-shadow: var(--sombra);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
 }
 
 .final h2 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .final p {
-    color: var(--texto-suave);
-    margin-bottom: 20px;
+    color: var(--cinza);
+    margin-bottom: 15px;
 }
 
 .final button {
-    border: none;
+    border: 0;
 
-    background: var(--principal);
+    background: var(--azul);
     color: white;
 
-    padding: 12px 22px;
+    padding: 10px 20px;
 
-    border-radius: 10px;
+    border-radius: 6px;
 
     font-weight: bold;
-    cursor: pointer;
-
-    transition: 0.2s;
 }
 
 
 
 @media (max-width: 700px) {
 
-    .cabecalho {
-        padding: 45px 0;
+    .container {
+        width: 94%;
     }
 
-    .introducao {
-        padding: 22px;
+    .cabecalho {
+        padding: 35px 15px;
+    }
+
+    .cabecalho h1 {
+        font-size: 38px;
     }
 
     .informacoes {
         grid-template-columns: 1fr;
     }
 
-    .topico-cabecalho {
-        align-items: flex-start;
+    .introducao {
         padding: 20px;
     }
 
+    .topico-cabecalho {
+        align-items: flex-start;
+        padding: 15px;
+    }
+
     .numero-topico {
-        min-width: 52px;
-        height: 52px;
-        border-radius: 14px;
+        width: 42px;
+        height: 42px;
     }
 
     .topico-cabecalho h2 {
-        font-size: 1.25rem;
+        font-size: 18px;
     }
 
     .questao {
-        padding: 18px;
-        gap: 12px;
+        padding: 13px;
+        gap: 10px;
     }
 
     .formula {
-        padding: 12px 8px;
-        font-size: 0.85rem;
-        text-align: center;
-    }
-
-    .formula mjx-container {
-        max-width: 100%;
+        padding: 9px;
+        font-size: .95rem;
         overflow-x: auto;
-        overflow-y: hidden;
     }
 }
 
-
+@page {
+    size: A4;
+    margin: 14mm 13mm 15mm 13mm;
+}
 
 @media print {
 
+
+    html,
     body {
-        background: white;
+        width: 210mm;
+        background: white !important;
     }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #111827;
+        font-size: 10.5pt;
+        line-height: 1.4;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
 
     .cabecalho {
-        background: white;
-        color: black;
-        padding: 20px 0;
+        background: white !important;
+        color: #111827 !important;
+
+        padding: 8mm 0 5mm;
+
+        border-bottom: 2px solid #2563eb;
     }
 
-    .introducao,
-    .topico-cabecalho,
-    .questao,
-    .final {
-        box-shadow: none;
+    .cabecalho h1 {
+        color: #2563eb;
+        font-size: 30pt;
+        margin-bottom: 2mm;
     }
+
+    .cabecalho p {
+        font-size: 11pt;
+        color: #475569;
+    }
+
+
+    .introducao {
+        margin: 5mm 0 7mm;
+        padding: 5mm;
+
+        border: 1px solid #cbd5e1;
+        border-radius: 0;
+
+        box-shadow: none !important;
+    }
+
+    .introducao h2 {
+        font-size: 14pt;
+        margin-bottom: 2mm;
+    }
+
+    .introducao p {
+        font-size: 9.5pt;
+        color: #334155;
+    }
+
+    .informacoes {
+        gap: 4mm;
+        margin-top: 4mm;
+    }
+
+    .informacoes div {
+        padding: 3mm;
+
+        background: white;
+        border: 1px solid #cbd5e1;
+        border-radius: 0;
+    }
+
+    .informacoes strong {
+        font-size: 16pt;
+    }
+
+    .informacoes span {
+        font-size: 8pt;
+    }
+
+
+
+    .topico {
+        margin-bottom: 7mm;
+
+        break-inside: auto;
+    }
+
+    .topico-cabecalho {
+        padding: 4mm;
+
+        background: white;
+
+        border: none;
+        border-bottom: 2px solid #2563eb;
+
+        border-radius: 0;
+
+        break-after: avoid;
+    }
+
+    .numero-topico {
+        width: 12mm;
+        height: 12mm;
+
+        min-width: 12mm;
+
+        background: #2563eb;
+        color: white;
+
+        border-radius: 3mm;
+
+        font-size: 10pt;
+    }
+
+    .categoria {
+        font-size: 7.5pt;
+        color: #2563eb;
+    }
+
+    .topico-cabecalho h2 {
+        font-size: 15pt;
+    }
+
+    .topico-cabecalho p {
+        font-size: 8.5pt;
+        color: #64748b;
+    }
+
+
+    .exercicios {
+        gap: 3mm;
+        padding-top: 3mm;
+    }
+
+    .questao {
+        background: white;
+
+        padding: 3.5mm;
+
+        border: 1px solid #d7dee7;
+        border-radius: 0;
+
+        box-shadow: none !important;
+
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .numero {
+        width: 7mm;
+        height: 7mm;
+
+        background: #eff6ff;
+        color: #2563eb;
+
+        font-size: 9pt;
+    }
+
+    .conteudo {
+        font-size: 10pt;
+    }
+
+    .conteudo > p {
+        margin-bottom: 2mm;
+    }
+
+    .itens {
+        gap: 1mm;
+        margin: 2mm 0;
+    }
+
+    .alternativas {
+        gap: 1mm;
+        margin: 2mm 0;
+    }
+
+    .formula {
+        padding: 2.5mm;
+
+        margin: 2mm 0;
+
+        background: #fafafa;
+
+        border: 1px solid #d7dee7;
+        border-radius: 0;
+
+        font-size: 10.5pt;
+    }
+
+
+    .observacao {
+        font-size: 8.5pt;
+    }
+
+
+
+    mjx-container {
+        font-size: 100% !important;
+    }
+
+    .formula mjx-container {
+        margin: 0 !important;
+    }
+
+
 
     textarea {
         border: 1px solid #999;
+        border-radius: 0;
     }
 
+
+  
+
     .final {
+        display: none !important;
+    }
+
+    button {
         display: none;
     }
 
 
+    /* ---------- evita cortes ruins ---------- */
+
+    h1,
+    h2,
+    h3,
+    .topico-cabecalho,
+    .questao {
+        page-break-inside: avoid;
+    }
+
+    .topico-cabecalho {
+        page-break-after: avoid;
+    }
+
+
+
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 }
