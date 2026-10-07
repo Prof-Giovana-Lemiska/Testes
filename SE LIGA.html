@@ -180,9 +180,6 @@
 
             <div class="trimestres">
 
-
-                <!-- 1º TRIMESTRE -->
-
                 <button class="trimestre" onclick="abrirTrimestre(1)">
 
                     <span class="trimestre-numero">
@@ -192,7 +189,6 @@
                     <h3>
                         Primeiro trimestre
                     </h3>
-
 
                 </button>
 
@@ -367,33 +363,86 @@
 
         }
 
-        function abrirTrimestre(numero) {
+       function abrirTrimestre(numero) {
 
-            if (!turmaAtual) {
-                return;
-            }
+    const links = {
 
+        "7": {
+            1: "./matematica/7ano/1-trimestre.html",
+            2: "./matematica/7ano/2-trimestre.html",
+            3: "./matematica/7ano/3-trimestre.html"
+        },
 
-            console.log(
-                "Turma:",
-                turmaAtual,
-                "| Trimestre:",
-                numero
-            );
+        "8": {
+            1: "./matematica/8ano/1-trimestre.html",
+            2: "./matematica/8ano/2-trimestre.html",
+            3: "./matematica/8ano/3-trimestre.html"
+        },
 
+        "9": {
+            1: "./matematica/9ano/1-trimestre.html",
+            2: "./matematica/9ano/2-trimestre.html",
+            3: "./matematica/9ano/3-trimestre.html"
+        },
 
-            /*
-             * COLOQUE OS LINKS DOS SEUS ARQUIVOS AQUI.
-             *
-             * Exemplo:
-             *
-             * if (turmaAtual === "7" && numero === 1) {
-             *     window.location.href =
-             *         "./7ano/1-trimestre.html";
-             * }
-             */
+        "1": {
+            1: "./matematica/1ano/1-trimestre.html",
+            2: "./matematica/1ano/2-trimestre.html",
+            3: "./matematica/1ano/3-trimestre.html"
+        },
 
+        "2": {
+            1: "./matematica/2ano/1-trimestre.html",
+            2: "./matematica/2ano/2-trimestre.html",
+            3: "./matematica/2ano/3-trimestre.html"
+        },
+
+        "3": {
+            1: "./matematica/3ano/1-trimestre.html",
+            2: "./matematica/3ano/2-trimestre.html",
+            3: "./matematica/3ano/3-trimestre.html"
+        },
+
+        "1E": {
+            1: "./educacao-financeira/1ano/1-trimestre.html",
+            2: "./educacao-financeira/1ano/2-trimestre.html",
+            3: "./educacao-financeira/1ano/3-trimestre.html"
+        },
+
+        "2E": {
+            1: "./educacao-financeira/2ano/1-trimestre.html",
+            2: "./educacao-financeira/2ano/2-trimestre.html",
+            3: "./educacao-financeira/2ano/3-trimestre.html"
+        },
+
+        "3E": {
+            1: "./educacao-financeira/3ano/1-trimestre.html",
+            2: "./educacao-financeira/3ano/2-trimestre.html",
+            3: "./educacao-financeira/3ano/3-trimestre.html"
         }
+
+    };
+
+
+    const link = links[turmaAtual]?.[numero];
+
+
+    if (link) {
+
+        window.location.href = link;
+
+    } else {
+
+        console.error(
+            "Link não encontrado para:",
+            turmaAtual,
+            "Trimestre:",
+            numero
+        );
+
+    }
+
+}
 
     </script>
 

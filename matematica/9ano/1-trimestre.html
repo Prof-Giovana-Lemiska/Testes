@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Matemática</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fafafa;
+      color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+    }
+
+    .topo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 110px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .numero {
+      color: #3157d5;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .conteudo {
+      max-width: 700px;
+    }
+
+    .tag {
+      display: inline-block;
+      color: #3157d5;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(52px, 9vw, 92px);
+      line-height: 0.95;
+      letter-spacing: -5px;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+
+    .descricao {
+      max-width: 500px;
+      color: #666;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 55px;
+    }
+
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #ddd;
+    }
+
+    .botao {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 24px 5px;
+
+      color: #111;
+      text-decoration: none;
+
+      font-size: 20px;
+      font-weight: 600;
+
+      border-bottom: 1px solid #ddd;
+
+      transition: 0.25s ease;
+    }
+
+    .botao span {
+      color: #999;
+      font-size: 24px;
+      font-weight: 400;
+      transition: 0.25s ease;
+    }
+
+    .botao:hover {
+      color: #3157d5;
+      padding-left: 12px;
+    }
+
+    .botao:hover span {
+      color: #3157d5;
+      transform: translateX(5px);
+    }
+
+    .rodape {
+      margin-top: 70px;
+      color: #999;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 25px;
+      }
+
+      .topo {
+        margin-bottom: 80px;
+      }
+
+      h1 {
+        letter-spacing: -3px;
+      }
+
+      .descricao {
+        font-size: 16px;
+      }
+
+      .botao {
+        font-size: 18px;
+        padding: 22px 2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header class="topo">
+      <div class="logo">MATEMÁTICA</div>
+    </header>
+
+    <section class="conteudo">
+
+      <div class="tag">Área de estudos</div>
+
+
+      <nav class="botoes">
+
+        <a href="./listas.html" class="botao">
+          <span>01</span>
+          Listas de exercícios
+          <span>→</span>
+        </a>
+
+        <a href="./SE LIGA.html" class="botao">
+          <span>02</span>
+          SE LIGA!
+          <span>→</span>
+        </a>
+
+      </nav>
+
+      <p class="rodape">
+        Professora Giovana - Aprender · Praticar · Revisar
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
