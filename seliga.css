@@ -87,295 +87,295 @@
             color: var(--azul);
         }
 
-.azul{
-    color: #5466a1;
-}
-    
+        
         .selecao {
             width: min(1000px, 90%);
             margin: 0 auto;
 
             padding-bottom: 90px;
         }
-
+        
         .cabecalho-secao {
             display: flex;
             align-items: end;
             justify-content: space-between;
-
+            
             gap: 30px;
-
+            
             padding-bottom: 18px;
-
+            
             border-bottom: 1px solid var(--borda);
         }
-
+        
         .cabecalho-secao h2 {
             font-size: 22px;
             letter-spacing: -0.5px;
         }
-
+        
         .cabecalho-secao p {
             color: var(--cinza);
-
+            
             font-size: 14px;
-
+            
             text-align: right;
         }
-
-
-    
+        
+        
+        
         .turmas {
             display: grid;
-
+            
             grid-template-columns:
-                repeat(3, 1fr);
-
+            repeat(3, 1fr);
+            
             border-left: 1px solid var(--borda);
         }
-
+        
         .turma {
             min-height: 140px;
-
+            
             padding: 25px;
-
+            
             border: none;
             border-right: 1px solid var(--borda);
             border-bottom: 1px solid var(--borda);
-
+            
             background: transparent;
-
+            
             text-align: center;
-
+            
             cursor: pointer;
-
+            
             transition:
                 background 0.2s ease,
                 color 0.2s ease;
-        }
-
-        .turma:hover {
-            background: var(--branco);
-        }
-
-        .turma.ativo {
-            background: var(--azul);
-            color: white;
-        }
-
-
-        /* Categoria */
-
-        .categoria {
-            display: block;
-
-            color: var(--cinza-claro);
-
-            font-size: 11px;
-            font-weight: 700;
-
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-
-            margin-bottom: 28px;
-        }
-
-        .turma.ativo .categoria {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-
-        /* Ano */
-
-        .turma h3 {
-            font-size: 24px;
-
-            font-weight: 700;
-
-            letter-spacing: -0.7px;
-
-            margin: 0;
-        }
-
-        .turma.ativo h3 {
-            color: white;
-        }
-
-
-    
-        .painel {
-            display: none;
-
-            margin-top: 60px;
-
-            animation: aparecer 0.25s ease;
-        }
-
-        .painel.ativo {
-            display: block;
-        }
-
-        @keyframes aparecer {
-
-            from {
-                opacity: 0;
-                transform: translateY(8px);
             }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
+            
+            .turma:hover {
+                background: var(--branco);
             }
-
-        }
-
-
-    
-        .painel-cabecalho {
+            
+            .turma.ativo {
+                background: var(--azul);
+                color: white;
+            }
+            
+            
+            /* Categoria */
+            
+            .categoria {
+                display: block;
+                
+                color: var(--cinza-claro);
+                
+                font-size: 11px;
+                font-weight: 700;
+                
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                
+                margin-bottom: 28px;
+            }
+            
+            .turma.ativo .categoria {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            
+            
+            /* Ano */
+            
+            .turma h3 {
+                font-size: 24px;
+                
+                font-weight: 700;
+                
+                letter-spacing: -0.7px;
+                
+                margin: 0;
+            }
+            
+            .turma.ativo h3 {
+                color: white;
+            }
+            
+            
+            
+            .painel {
+                display: none;
+                
+                margin-top: 60px;
+                
+                animation: aparecer 0.25s ease;
+            }
+            
+            .painel.ativo {
+                display: block;
+            }
+            
+            @keyframes aparecer {
+                
+                from {
+                    opacity: 0;
+                    transform: translateY(8px);
+                }
+                
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                
+            }
+            
+            
+            
+            .painel-cabecalho {
             display: flex;
-
+            
             align-items: center;
             justify-content: space-between;
-
+            
             gap: 20px;
-
+            
             padding-bottom: 18px;
-
+            
             border-bottom: 1px solid var(--borda);
         }
-
+        
         .painel-cabecalho small {
             display: block;
-
+            
             color: var(--azul);
-
+            
             font-size: 11px;
             font-weight: 700;
-
+            
             text-transform: uppercase;
             letter-spacing: 1.5px;
-
+            
             margin-bottom: 8px;
         }
-
+        
         .painel-cabecalho h2 {
             font-size: 28px;
-
+            
             letter-spacing: -1px;
         }
-
+        
         .fechar {
             border: none;
-
+            
             background: transparent;
-
+            
             color: var(--cinza);
-
+            
             font-size: 27px;
-
+            
             cursor: pointer;
-
+            
             padding: 5px;
-
+            
             transition: color 0.2s ease;
         }
-
+        
         .fechar:hover {
             color: var(--azul);
         }
-
-
-    
+        
+        
+        
         .trimestres {
             display: grid;
-
+            
             grid-template-columns:
-                repeat(3, 1fr);
+            repeat(3, 1fr);
         }
-
+        
         .trimestre {
             min-height: 170px;
-
+            
             padding: 25px;
-
+            
             border: none;
             border-right: 1px solid var(--borda);
             border-bottom: 1px solid var(--borda);
-
+            
             background: transparent;
-
+            
             text-align: left;
-
+            
             cursor: pointer;
-
+            
             transition:
-                background 0.2s ease,
-                color 0.2s ease;
+            background 0.2s ease,
+            color 0.2s ease;
         }
-
+        
         .trimestre:first-child {
             border-left: 1px solid var(--borda);
         }
-
+        
         .trimestre:hover {
             background: var(--branco);
         }
-
+        
         .trimestre-numero {
             display: block;
-
+            
             color: var(--cinza-claro);
-
+            
             font-size: 12px;
             font-weight: 700;
-
+            
             letter-spacing: 1px;
-
+            
             margin-bottom: 35px;
         }
-
+        
         .trimestre h3 {
             font-size: 19px;
-
+            
             letter-spacing: -0.4px;
-
+            
             margin-bottom: 8px;
         }
-
+        
         .trimestre p {
             color: var(--cinza);
-
+            
             font-size: 13px;
         }
-
-
-    
+        
+        
+        
         footer {
             width: min(1000px, 90%);
             margin: 0 auto;
-
+            
             padding: 25px 0;
-
+            
             border-top: 1px solid var(--borda);
-
+            
             color: var(--cinza-claro);
-
+            
             font-size: 12px;
         }
-
-
-    
+        
+        .azul{
+            color: #5466a1;
+        }
+        
+        
         @media (max-width: 700px) {
-
+            
             header {
                 padding-top: 25px;
                 padding-bottom: 70px;
             }
-
+            
             .voltar {
                 display: none;
             }
-
+            
             .capa {
                 padding-bottom: 65px;
             }
