@@ -375,7 +375,6 @@ textarea::placeholder {
         background: white;
         color: #111;
         padding: 25px 0;
-        text-align: center;
         border: none;
     }
 
@@ -430,39 +429,31 @@ textarea::placeholder {
     }
 
     .topico {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
     }
 
     .topico-cabecalho {
+        display: block;
         background: white;
-        padding: 0 0 10px;
+        padding: 0 0 8px;
         border: none;
         border-bottom: 1px solid #111;
         border-radius: 0;
         box-shadow: none;
     }
 
-    .numero-topico {
-        background: white;
-        color: #111;
-        min-width: auto;
-        width: auto;
-        height: auto;
-        border-radius: 0;
-        font-size: 16px;
-    }
-
-    .categoria {
-        color: #333;
+    .numero-topico,
+    .categoria,
+    .topico-cabecalho p {
+        display: none;
     }
 
     .topico-cabecalho h2 {
-        font-size: 22px;
-    }
-
-    .topico-cabecalho p {
-        color: #444;
-        font-size: 14px;
+        display: block;
+        font-size: 21px;
+        font-weight: bold;
+        color: #111;
+        margin: 0;
     }
 
     .exercicios {
