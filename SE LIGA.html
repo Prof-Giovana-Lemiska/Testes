@@ -9,13 +9,7 @@
 
 </head>
 
-
 <body>
-
-
-    <!-- =========================
-         CABEÇALHO
-    ========================== -->
 
     <header>
 
@@ -23,20 +17,7 @@
             MATEMÁTICA <span>•</span> SE LIGA!
         </div>
 
-        <a
-            href="./index.html"
-            class="voltar"
-        >
-            ← Voltar
-        </a>
-
     </header>
-
-
-    <!-- =========================
-         TÍTULO
-    ========================== -->
-
     <section class="capa">
 
         <h1>
@@ -44,38 +25,16 @@
         </h1>
 
     </section>
-
-
-    <!-- =========================
-         TURMAS
-    ========================== -->
-
     <main class="selecao">
-
         <div class="cabecalho-secao">
-
             <h2>
-                Escolha sua turma
+                Escolha a turma:
             </h2>
-
-            <p>
-                Selecione uma opção para continuar.
-            </p>
-
         </div>
-
-
         <div class="turmas">
 
 
-            <!-- =====================
-                 MATEMÁTICA
-            ====================== -->
-
-            <button
-                class="turma"
-                onclick="mostrarTurma('7', this)"
-            >
+            <button class="turma" onclick="mostrarTurma('7', this)">
 
                 <span class="categoria">
                     Matemática
@@ -88,10 +47,7 @@
             </button>
 
 
-            <button
-                class="turma"
-                onclick="mostrarTurma('8', this)"
-            >
+            <button class="turma" onclick="mostrarTurma('8', this)">
 
                 <span class="categoria">
                     Matemática
@@ -104,10 +60,7 @@
             </button>
 
 
-            <button
-                class="turma"
-                onclick="mostrarTurma('9', this)"
-            >
+            <button class="turma" onclick="mostrarTurma('9', this)">
 
                 <span class="categoria">
                     Matemática
@@ -120,10 +73,7 @@
             </button>
 
 
-            <button
-                class="turma"
-                onclick="mostrarTurma('1', this)"
-            >
+            <button class="turma" onclick="mostrarTurma('1', this)">
 
                 <span class="categoria">
                     Matemática
@@ -136,10 +86,7 @@
             </button>
 
 
-            <button
-                class="turma"
-                onclick="mostrarTurma('2', this)"
-            >
+            <button class="turma" onclick="mostrarTurma('2', this)">
 
                 <span class="categoria">
                     Matemática
@@ -152,10 +99,7 @@
             </button>
 
 
-            <button
-                class="turma"
-                onclick="mostrarTurma('3', this)"
-            >
+            <button class="turma" onclick="mostrarTurma('3', this)">
 
                 <span class="categoria">
                     Matemática
@@ -168,16 +112,9 @@
             </button>
 
 
-            <!-- =====================
-                 EDUCAÇÃO FINANCEIRA
-            ====================== -->
+            <button class="turma" onclick="mostrarTurma('1E', this)">
 
-            <button
-                class="turma"
-                onclick="mostrarTurma('1E', this)"
-            >
-
-                <span class="categoria">
+                <span class="categoria azul">
                     Educação Financeira
                 </span>
 
@@ -188,12 +125,9 @@
             </button>
 
 
-            <button
-                class="turma"
-                onclick="mostrarTurma('2E', this)"
-            >
+            <button class="turma" onclick="mostrarTurma('2E', this)">
 
-                <span class="categoria">
+                <span class="categoria azul">
                     Educação Financeira
                 </span>
 
@@ -204,12 +138,9 @@
             </button>
 
 
-            <button
-                class="turma"
-                onclick="mostrarTurma('3E', this)"
-            >
+            <button class="turma" onclick="mostrarTurma('3E', this)">
 
-                <span class="categoria">
+                <span class="categoria azul">
                     Educação Financeira
                 </span>
 
@@ -223,14 +154,7 @@
         </div>
 
 
-        <!-- =========================
-             PAINEL DOS TRIMESTRES
-        ========================== -->
-
-        <section
-            id="painel"
-            class="painel"
-        >
+        <section id="painel" class="painel">
 
             <div class="painel-cabecalho">
 
@@ -247,11 +171,7 @@
                 </div>
 
 
-                <button
-                    class="fechar"
-                    onclick="fecharTurma()"
-                    aria-label="Fechar"
-                >
+                <button class="fechar" onclick="fecharTurma()" aria-label="Fechar">
                     ×
                 </button>
 
@@ -263,10 +183,7 @@
 
                 <!-- 1º TRIMESTRE -->
 
-                <button
-                    class="trimestre"
-                    onclick="abrirTrimestre(1)"
-                >
+                <button class="trimestre" onclick="abrirTrimestre(1)">
 
                     <span class="trimestre-numero">
                         01
@@ -283,12 +200,8 @@
                 </button>
 
 
-                <!-- 2º TRIMESTRE -->
 
-                <button
-                    class="trimestre"
-                    onclick="abrirTrimestre(2)"
-                >
+                <button class="trimestre" onclick="abrirTrimestre(2)">
 
                     <span class="trimestre-numero">
                         02
@@ -305,12 +218,7 @@
                 </button>
 
 
-                <!-- 3º TRIMESTRE -->
-
-                <button
-                    class="trimestre"
-                    onclick="abrirTrimestre(3)"
-                >
+                <button class="trimestre" onclick="abrirTrimestre(3)">
 
                     <span class="trimestre-numero">
                         03
@@ -333,11 +241,6 @@
 
     </main>
 
-
-    <!-- =========================
-         RODAPÉ
-    ========================== -->
-
     <footer>
 
         SE LIGA! • Matemática
@@ -348,11 +251,6 @@
     <script>
 
         let turmaAtual = null;
-
-
-        /* =========================
-           DADOS DAS TURMAS
-        ========================== */
 
         const dadosTurmas = {
 
@@ -403,11 +301,6 @@
 
         };
 
-
-        /* =========================
-           MOSTRAR TURMA
-        ========================== */
-
         function mostrarTurma(turma, botao) {
 
             turmaAtual = turma;
@@ -417,7 +310,7 @@
                 document.querySelectorAll(".turma");
 
 
-            botoes.forEach(function(item) {
+            botoes.forEach(function (item) {
 
                 item.classList.remove("ativo");
 
@@ -448,7 +341,7 @@
             painel.classList.add("ativo");
 
 
-            setTimeout(function() {
+            setTimeout(function () {
 
                 painel.scrollIntoView({
                     behavior: "smooth",
@@ -458,11 +351,6 @@
             }, 100);
 
         }
-
-
-        /* =========================
-           FECHAR TURMA
-        ========================== */
 
         function fecharTurma() {
 
@@ -477,7 +365,7 @@
                 document.querySelectorAll(".turma");
 
 
-            botoes.forEach(function(item) {
+            botoes.forEach(function (item) {
 
                 item.classList.remove("ativo");
 
@@ -487,11 +375,6 @@
             turmaAtual = null;
 
         }
-
-
-        /* =========================
-           ABRIR TRIMESTRE
-        ========================== */
 
         function abrirTrimestre(numero) {
 
@@ -524,4 +407,5 @@
     </script>
 
 </body>
+
 </html>
