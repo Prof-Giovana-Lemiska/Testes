@@ -87,7 +87,9 @@
             color: var(--azul);
         }
 
-
+.azul{
+    color: #5466a1;
+}
     
         .selecao {
             width: min(1000px, 90%);
