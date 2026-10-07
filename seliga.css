@@ -1,0 +1,437 @@
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --azul: #3157d5;
+            --preto: #111111;
+            --cinza: #666666;
+            --cinza-claro: #999999;
+            --borda: #dddddd;
+            --fundo: #fafafa;
+            --branco: #ffffff;
+        }
+
+        body {
+            min-height: 100vh;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background: var(--fundo);
+            color: var(--preto);
+        }
+
+        header {
+            width: min(1000px, 90%);
+            margin: 0 auto;
+
+            padding: 35px 0 90px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .logo span {
+            color: var(--azul);
+        }
+
+        .voltar {
+            color: var(--cinza);
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: color 0.2s ease;
+        }
+
+        .voltar:hover {
+            color: var(--azul);
+        }
+
+        .capa {
+            width: min(1000px, 90%);
+            margin: 0 auto;
+
+            padding-bottom: 85px;
+        }
+
+        .numero {
+            display: block;
+
+            color: var(--azul);
+
+            font-size: 13px;
+            font-weight: 700;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(58px, 10vw, 105px);
+
+            line-height: 0.9;
+
+            letter-spacing: -6px;
+
+            font-weight: 800;
+
+            margin-bottom: 30px;
+        }
+
+        h1 span {
+            color: var(--azul);
+        }
+
+        .descricao {
+            max-width: 560px;
+
+            color: var(--cinza);
+
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .selecao {
+            width: min(1000px, 90%);
+            margin: 0 auto;
+
+            padding-bottom: 90px;
+        }
+
+        .cabecalho-secao {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+
+            gap: 30px;
+
+            padding-bottom: 18px;
+
+            border-bottom: 1px solid var(--borda);
+
+            margin-bottom: 0;
+        }
+
+        .cabecalho-secao h2 {
+            font-size: 22px;
+            letter-spacing: -0.5px;
+        }
+
+        .cabecalho-secao p {
+            color: var(--cinza);
+
+            font-size: 14px;
+
+            text-align: right;
+        }
+
+        .turmas {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            border-left: 1px solid var(--borda);
+        }
+
+        .turma {
+            min-height: 125px;
+
+            padding: 25px;
+
+            border: none;
+            border-right: 1px solid var(--borda);
+            border-bottom: 1px solid var(--borda);
+
+            background: transparent;
+
+            text-align: left;
+
+            cursor: pointer;
+
+            transition:
+                background 0.2s ease,
+                color 0.2s ease;
+        }
+
+        .turma:hover {
+            background: var(--branco);
+        }
+
+        .turma.ativo {
+            background: var(--azul);
+            color: white;
+        }
+
+        .turma-numero {
+            display: block;
+
+            color: var(--cinza-claro);
+
+            font-size: 12px;
+            font-weight: 700;
+
+            margin-bottom: 18px;
+        }
+
+        .turma.ativo .turma-numero {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .turma h3 {
+            font-size: 20px;
+
+            letter-spacing: -0.5px;
+
+            margin-bottom: 5px;
+        }
+
+        .turma p {
+            color: var(--cinza);
+
+            font-size: 13px;
+        }
+
+        .turma.ativo p {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .painel {
+            display: none;
+
+            margin-top: 60px;
+
+            animation: aparecer 0.25s ease;
+        }
+
+        .painel.ativo {
+            display: block;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .painel-cabecalho {
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding-bottom: 18px;
+
+            border-bottom: 1px solid var(--borda);
+
+            margin-bottom: 0;
+        }
+
+        .painel-cabecalho small {
+            display: block;
+
+            color: var(--azul);
+
+            font-size: 12px;
+            font-weight: 700;
+
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+
+            margin-bottom: 8px;
+        }
+
+        .painel-cabecalho h2 {
+            font-size: 28px;
+            letter-spacing: -1px;
+        }
+
+        .fechar {
+            border: none;
+
+            background: transparent;
+
+            color: var(--cinza);
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+            padding: 5px;
+
+            transition: color 0.2s ease;
+        }
+
+        .fechar:hover {
+            color: var(--azul);
+        }
+
+        .trimestres {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+        }
+
+        .trimestre {
+            min-height: 170px;
+
+            padding: 25px;
+
+            border: none;
+            border-right: 1px solid var(--borda);
+            border-bottom: 1px solid var(--borda);
+
+            background: transparent;
+
+            text-align: left;
+
+            cursor: pointer;
+
+            transition:
+                background 0.2s ease,
+                color 0.2s ease;
+        }
+
+        .trimestre:first-child {
+            border-left: 1px solid var(--borda);
+        }
+
+        .trimestre:hover {
+            background: var(--branco);
+        }
+
+        .trimestre-numero {
+            display: block;
+
+            color: var(--cinza-claro);
+
+            font-size: 12px;
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 35px;
+        }
+
+        .trimestre h3 {
+            font-size: 19px;
+
+            letter-spacing: -0.4px;
+
+            margin-bottom: 8px;
+        }
+
+        .trimestre p {
+            color: var(--cinza);
+
+            font-size: 13px;
+        }
+
+        footer {
+            width: min(1000px, 90%);
+            margin: 0 auto;
+
+            padding: 25px 0;
+
+            border-top: 1px solid var(--borda);
+
+            color: var(--cinza-claro);
+
+            font-size: 12px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding-top: 25px;
+                padding-bottom: 70px;
+            }
+
+            .voltar {
+                display: none;
+            }
+
+            .capa {
+                padding-bottom: 65px;
+            }
+
+            h1 {
+                letter-spacing: -4px;
+            }
+
+            .descricao {
+                font-size: 16px;
+            }
+
+            .cabecalho-secao {
+                align-items: flex-start;
+
+                flex-direction: column;
+
+                gap: 8px;
+            }
+
+            .cabecalho-secao p {
+                text-align: left;
+            }
+
+            .turmas {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .trimestres {
+                grid-template-columns: 1fr;
+            }
+
+            .trimestre,
+            .trimestre:first-child {
+                border-left: 1px solid var(--borda);
+            }
+
+            .painel-cabecalho h2 {
+                font-size: 24px;
+            }
+        }
+
+
+        @media (max-width: 430px) {
+
+            .turmas {
+                grid-template-columns: 1fr;
+            }
+
+            .turma {
+                min-height: auto;
+            }
+
+            h1 {
+                font-size: 55px;
+            }
+        }
