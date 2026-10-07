@@ -353,33 +353,186 @@ textarea::placeholder {
 }
 
 
+@page {
+    size: A4;
+    margin: 18mm 16mm;
+}
 
 @media print {
 
     body {
         background: white;
+        color: #111;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 100%;
     }
 
     .cabecalho {
         background: white;
-        color: black;
-        padding: 20px 0;
+        color: #111;
+        padding: 25px 0;
+        text-align: center;
+        border: none;
     }
 
-    .introducao,
-    .topico-cabecalho,
-    .questao,
-    .final {
+    .cabecalho h1 {
+        color: #111;
+        font-size: 42px;
+        margin-bottom: 8px;
+    }
+
+    .cabecalho p {
+        color: #333;
+        font-size: 17px;
+    }
+
+    .introducao {
+        background: white;
+        margin: 25px 0 35px;
+        padding: 0;
+        border: none;
+        border-radius: 0;
         box-shadow: none;
     }
 
+    .introducao h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .introducao p {
+        color: #222;
+    }
+
+    .informacoes {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+
+    .informacoes div {
+        background: white;
+        padding: 10px;
+        border: none;
+        border-radius: 0;
+    }
+
+    .informacoes strong {
+        color: #111;
+    }
+
+    .informacoes span {
+        color: #444;
+    }
+
+    .topico {
+        margin-bottom: 45px;
+    }
+
+    .topico-cabecalho {
+        background: white;
+        padding: 0 0 10px;
+        border: none;
+        border-bottom: 1px solid #111;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .numero-topico {
+        background: white;
+        color: #111;
+        min-width: auto;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        font-size: 16px;
+    }
+
+    .categoria {
+        color: #333;
+    }
+
+    .topico-cabecalho h2 {
+        font-size: 22px;
+    }
+
+    .topico-cabecalho p {
+        color: #444;
+        font-size: 14px;
+    }
+
+    .exercicios {
+        gap: 14px;
+        padding-top: 14px;
+    }
+
+    .questao {
+        background: white;
+        border: none;
+        border-radius: 0;
+        padding: 8px 0;
+        gap: 15px;
+        box-shadow: none;
+    }
+
+    .numero {
+        background: white;
+        color: #111;
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
+        font-size: 15px;
+    }
+
+    .conteudo {
+        font-size: 15px;
+    }
+
+    .itens {
+        gap: 5px;
+        margin: 12px 0;
+    }
+
+    .alternativas {
+        gap: 5px;
+        margin: 12px 0;
+    }
+
+    .formula {
+        background: white;
+        border: none;
+        border-radius: 0;
+        padding: 10px 0;
+        margin: 12px 0;
+        font-size: 1.15rem;
+    }
+
+    .observacao {
+        color: #444;
+    }
+
     textarea {
-        border: 1px solid #999;
+        border: 1px solid #777;
+        border-radius: 0;
+        box-shadow: none;
     }
 
     .final {
         display: none;
     }
 
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
+    .topico-cabecalho,
+    .questao {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
 }
