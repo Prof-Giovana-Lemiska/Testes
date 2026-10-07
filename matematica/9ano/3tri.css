@@ -1,0 +1,528 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fundo: #f4f7fb;
+    --branco: #ffffff;
+    --texto: #1f2937;
+    --texto-suave: #64748b;
+    --borda: #e2e8f0;
+    --principal: #4f46e5;
+    --principal-escura: #3730a3;
+    --destaque: #f59e0b;
+    --sombra: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.cabecalho {
+    background: linear-gradient(135deg,
+            var(--principal),
+            var(--principal-escura));
+
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.etiqueta {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.cabecalho h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.cabecalho p {
+    font-size: 1.25rem;
+}
+
+.cabecalho .subtitulo {
+    margin-top: 8px;
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+.introducao {
+    background: var(--branco);
+    margin: 35px 0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--sombra);
+}
+
+.introducao h2 {
+    margin-bottom: 10px;
+}
+
+.introducao p {
+    color: var(--texto-suave);
+}
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.informacoes div {
+    text-align: center;
+    padding: 18px;
+    background: #f8fafc;
+    border-radius: 15px;
+}
+
+.informacoes strong {
+    display: block;
+    color: var(--principal);
+    font-size: 1.8rem;
+}
+
+.informacoes span {
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+}
+
+.topico {
+    margin-bottom: 45px;
+}
+
+.topico-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--branco);
+    padding: 25px;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 3px solid var(--principal);
+}
+
+.numero-topico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 65px;
+    height: 65px;
+
+    border-radius: 18px;
+
+    background: var(--principal);
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.categoria {
+    color: var(--principal);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.topico-cabecalho h2 {
+    font-size: 1.6rem;
+}
+
+.topico-cabecalho p {
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+}
+
+.exercicios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 12px;
+}
+
+.questao {
+    display: flex;
+    gap: 20px;
+
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 15px;
+
+    padding: 22px;
+
+    transition: 0.2s ease;
+}
+
+
+.numero {
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef2ff;
+    color: var(--principal);
+
+    font-weight: bold;
+}
+
+.conteudo {
+    flex: 1;
+}
+
+.conteudo>p {
+    margin-bottom: 12px;
+}
+
+.itens {
+    display: grid;
+    gap: 7px;
+    margin: 15px 0;
+}
+
+.alternativas {
+    display: grid;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.formula {
+    background: #f8fafc;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+
+    padding: 18px;
+    margin: 15px 0;
+
+    text-align: center;
+
+    font-size: 1.15rem;
+}
+
+.observacao {
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+    font-style: italic;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+
+    margin-top: 12px;
+    padding: 12px 14px;
+
+    resize: vertical;
+
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    background: #fcfdff;
+
+    transition: 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--principal);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+
+.final {
+    text-align: center;
+
+    background: var(--branco);
+
+    padding: 40px;
+    margin: 50px 0;
+
+    border-radius: 20px;
+
+    box-shadow: var(--sombra);
+}
+
+.final h2 {
+    margin-bottom: 10px;
+}
+
+.final p {
+    color: var(--texto-suave);
+    margin-bottom: 20px;
+}
+
+.final button {
+    border: none;
+
+    background: var(--principal);
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+        padding: 45px 0;
+    }
+
+    .introducao {
+        padding: 22px;
+    }
+
+    .informacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .topico-cabecalho {
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .numero-topico {
+        min-width: 52px;
+        height: 52px;
+        border-radius: 14px;
+    }
+
+    .topico-cabecalho h2 {
+        font-size: 1.25rem;
+    }
+
+    .questao {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .formula {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .formula mjx-container {
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+}
+
+
+@page {
+    size: A4;
+    margin: 18mm 16mm;
+}
+
+@media print {
+
+    body {
+        background: white;
+        color: #111;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .cabecalho {
+        background: white;
+        color: #111;
+        padding: 25px 0;
+        border: none;
+    }
+
+    .cabecalho h1 {
+        color: #111;
+        font-size: 42px;
+        margin-bottom: 8px;
+    }
+
+    .cabecalho p {
+        color: #333;
+        font-size: 17px;
+    }
+
+    .introducao {
+        background: white;
+        margin: 25px 0 35px;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .introducao h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .introducao p {
+        color: #222;
+    }
+
+    .informacoes {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+
+    .informacoes div {
+        background: white;
+        padding: 10px;
+        border: none;
+        border-radius: 0;
+    }
+
+    .informacoes strong {
+        color: #111;
+    }
+
+    .informacoes span {
+        color: #444;
+    }
+
+    .topico {
+        margin-bottom: 40px;
+    }
+
+    .topico-cabecalho {
+        display: block;
+        background: white;
+        padding: 0 0 8px;
+        border: none;
+        border-bottom: 1px solid #111;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .numero-topico,
+    .categoria,
+    .topico-cabecalho p {
+        display: none;
+    }
+
+    .topico-cabecalho h2 {
+        display: block;
+        font-size: 21px;
+        font-weight: bold;
+        color: #111;
+        margin: 0;
+    }
+
+    .exercicios {
+        gap: 14px;
+        padding-top: 14px;
+    }
+
+    .questao {
+        background: white;
+        border: none;
+        border-radius: 0;
+        padding: 8px 0;
+        gap: 15px;
+        box-shadow: none;
+    }
+
+    .numero {
+        background: white;
+        color: #111;
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
+        font-size: 15px;
+    }
+
+    .conteudo {
+        font-size: 15px;
+    }
+
+    .itens {
+        gap: 5px;
+        margin: 12px 0;
+    }
+
+    .alternativas {
+        gap: 5px;
+        margin: 12px 0;
+    }
+
+    .formula {
+        background: white;
+        border: none;
+        border-radius: 0;
+        padding: 10px 0;
+        margin: 12px 0;
+        font-size: 1.15rem;
+        text-align: left;
+    }
+
+    .observacao {
+        color: #444;
+    }
+
+    textarea {
+        border: 1px solid #777;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .final {
+        display: none;
+    }
+
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    .topico-cabecalho,
+    .questao {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
