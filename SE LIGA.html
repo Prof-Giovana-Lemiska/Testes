@@ -5,209 +5,226 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>SE LIGA! — Matemática</title>
-    <link rel="stylesheet" href="seliga.css">
 
- 
 </head>
 
 
 <body>
 
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
     <header>
+
         <div class="logo">
             MATEMÁTICA <span>•</span> SE LIGA!
         </div>
+
+        <a
+            href="./index.html"
+            class="voltar"
+        >
+            ← Voltar
+        </a>
+
     </header>
 
+
+    <!-- =========================
+         TÍTULO
+    ========================== -->
+
     <section class="capa">
+
         <h1>
             SE <span>LIGA!</span>
         </h1>
+
     </section>
+
+
+    <!-- =========================
+         TURMAS
+    ========================== -->
 
     <main class="selecao">
 
         <div class="cabecalho-secao">
 
-            <h2>Escolha sua turma</h2>
+            <h2>
+                Escolha sua turma
+            </h2>
+
+            <p>
+                Selecione uma opção para continuar.
+            </p>
 
         </div>
 
 
         <div class="turmas">
 
-            <!-- 7º ANO -->
+
+            <!-- =====================
+                 MATEMÁTICA
+            ====================== -->
 
             <button
                 class="turma"
-                data-turma="7"
                 onclick="mostrarTurma('7', this)"
             >
 
-                <span class="turma-numero">
-                    01
+                <span class="categoria">
+                    Matemática
                 </span>
 
-                <h3>7º ano</h3>
-
-                <p>Matemática</p>
+                <h3>
+                    7º ano
+                </h3>
 
             </button>
 
 
-            <!-- 8º ANO -->
-
             <button
                 class="turma"
-                data-turma="8"
                 onclick="mostrarTurma('8', this)"
             >
 
-                <span class="turma-numero">
-                    02
+                <span class="categoria">
+                    Matemática
                 </span>
 
-                <h3>8º ano</h3>
-
-                <p>Matemática</p>
+                <h3>
+                    8º ano
+                </h3>
 
             </button>
 
 
-            <!-- 9º ANO -->
-
             <button
                 class="turma"
-                data-turma="9"
                 onclick="mostrarTurma('9', this)"
             >
 
-                <span class="turma-numero">
-                    03
+                <span class="categoria">
+                    Matemática
                 </span>
 
-                <h3>9º ano</h3>
-
-                <p>Matemática</p>
+                <h3>
+                    9º ano
+                </h3>
 
             </button>
 
 
-            <!-- 1º ANO -->
-
             <button
                 class="turma"
-                data-turma="1"
                 onclick="mostrarTurma('1', this)"
             >
 
-                <span class="turma-numero">
-                    04
+                <span class="categoria">
+                    Matemática
                 </span>
 
-                <h3>1º ano</h3>
-
-                <p>Ensino Médio</p>
+                <h3>
+                    1º ano
+                </h3>
 
             </button>
 
 
-            <!-- 2º ANO -->
-
             <button
                 class="turma"
-                data-turma="2"
                 onclick="mostrarTurma('2', this)"
             >
 
-                <span class="turma-numero">
-                    05
+                <span class="categoria">
+                    Matemática
                 </span>
 
-                <h3>2º ano</h3>
-
-                <p>Ensino Médio</p>
+                <h3>
+                    2º ano
+                </h3>
 
             </button>
 
 
-            <!-- 3º ANO -->
-
             <button
                 class="turma"
-                data-turma="3"
                 onclick="mostrarTurma('3', this)"
             >
 
-                <span class="turma-numero">
-                    06
+                <span class="categoria">
+                    Matemática
                 </span>
 
-                <h3>3º ano</h3>
-
-                <p>Ensino Médio</p>
+                <h3>
+                    3º ano
+                </h3>
 
             </button>
 
 
-            <!-- EDUCAÇÃO FINANCEIRA 1 -->
+            <!-- =====================
+                 EDUCAÇÃO FINANCEIRA
+            ====================== -->
 
             <button
                 class="turma"
-                data-turma="1E"
                 onclick="mostrarTurma('1E', this)"
             >
 
-                <span class="turma-numero">
-                    07
+                <span class="categoria">
+                    Educação Financeira
                 </span>
 
-                <h3>1º ano</h3>
-
-                <p>Educação Financeira</p>
+                <h3>
+                    1º ano
+                </h3>
 
             </button>
 
 
-            <!-- EDUCAÇÃO FINANCEIRA 2 -->
-
             <button
                 class="turma"
-                data-turma="2E"
                 onclick="mostrarTurma('2E', this)"
             >
 
-                <span class="turma-numero">
-                    08
+                <span class="categoria">
+                    Educação Financeira
                 </span>
 
-                <h3>2º ano</h3>
-
-                <p>Educação Financeira</p>
+                <h3>
+                    2º ano
+                </h3>
 
             </button>
 
-
-            <!-- EDUCAÇÃO FINANCEIRA 3 -->
 
             <button
                 class="turma"
-                data-turma="3E"
                 onclick="mostrarTurma('3E', this)"
             >
 
-                <span class="turma-numero">
-                    09
+                <span class="categoria">
+                    Educação Financeira
                 </span>
 
-                <h3>3º ano</h3>
-
-                <p>Educação Financeira</p>
+                <h3>
+                    3º ano
+                </h3>
 
             </button>
 
+
         </div>
 
+
+        <!-- =========================
+             PAINEL DOS TRIMESTRES
+        ========================== -->
 
         <section
             id="painel"
@@ -315,6 +332,11 @@
 
     </main>
 
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
     <footer>
 
         SE LIGA! • Matemática
@@ -327,20 +349,79 @@
         let turmaAtual = null;
 
 
-        /*
-         * Mostra o painel da turma selecionada.
-         */
+        /* =========================
+           DADOS DAS TURMAS
+        ========================== */
+
+        const dadosTurmas = {
+
+            "7": {
+                titulo: "7º ano",
+                categoria: "Matemática"
+            },
+
+            "8": {
+                titulo: "8º ano",
+                categoria: "Matemática"
+            },
+
+            "9": {
+                titulo: "9º ano",
+                categoria: "Matemática"
+            },
+
+            "1": {
+                titulo: "1º ano",
+                categoria: "Matemática"
+            },
+
+            "2": {
+                titulo: "2º ano",
+                categoria: "Matemática"
+            },
+
+            "3": {
+                titulo: "3º ano",
+                categoria: "Matemática"
+            },
+
+            "1E": {
+                titulo: "1º ano",
+                categoria: "Educação Financeira"
+            },
+
+            "2E": {
+                titulo: "2º ano",
+                categoria: "Educação Financeira"
+            },
+
+            "3E": {
+                titulo: "3º ano",
+                categoria: "Educação Financeira"
+            }
+
+        };
+
+
+        /* =========================
+           MOSTRAR TURMA
+        ========================== */
 
         function mostrarTurma(turma, botao) {
 
             turmaAtual = turma;
 
+
             const botoes =
                 document.querySelectorAll(".turma");
 
+
             botoes.forEach(function(item) {
+
                 item.classList.remove("ativo");
+
             });
+
 
             botao.classList.add("ativo");
 
@@ -355,61 +436,12 @@
                 document.getElementById("painel-tipo");
 
 
-            const dados = {
-
-                "7": {
-                    titulo: "7º ano",
-                    tipo: "Matemática"
-                },
-
-                "8": {
-                    titulo: "8º ano",
-                    tipo: "Matemática"
-                },
-
-                "9": {
-                    titulo: "9º ano",
-                    tipo: "Matemática"
-                },
-
-                "1": {
-                    titulo: "1º ano",
-                    tipo: "Matemática • Ensino Médio"
-                },
-
-                "2": {
-                    titulo: "2º ano",
-                    tipo: "Matemática • Ensino Médio"
-                },
-
-                "3": {
-                    titulo: "3º ano",
-                    tipo: "Matemática • Ensino Médio"
-                },
-
-                "1E": {
-                    titulo: "1º ano",
-                    tipo: "Educação Financeira"
-                },
-
-                "2E": {
-                    titulo: "2º ano",
-                    tipo: "Educação Financeira"
-                },
-
-                "3E": {
-                    titulo: "3º ano",
-                    tipo: "Educação Financeira"
-                }
-
-            };
-
-
             titulo.textContent =
-                dados[turma].titulo;
+                dadosTurmas[turma].titulo;
+
 
             tipo.textContent =
-                dados[turma].tipo;
+                dadosTurmas[turma].categoria;
 
 
             painel.classList.add("ativo");
@@ -423,17 +455,19 @@
                 });
 
             }, 100);
+
         }
 
 
-        /*
-         * Fecha o painel.
-         */
+        /* =========================
+           FECHAR TURMA
+        ========================== */
 
         function fecharTurma() {
 
             const painel =
                 document.getElementById("painel");
+
 
             painel.classList.remove("ativo");
 
@@ -441,19 +475,22 @@
             const botoes =
                 document.querySelectorAll(".turma");
 
+
             botoes.forEach(function(item) {
+
                 item.classList.remove("ativo");
+
             });
 
 
             turmaAtual = null;
+
         }
 
 
-        /*
-         * Aqui você poderá colocar os links
-         * de cada trimestre.
-         */
+        /* =========================
+           ABRIR TRIMESTRE
+        ========================== */
 
         function abrirTrimestre(numero) {
 
@@ -465,19 +502,20 @@
             console.log(
                 "Turma:",
                 turmaAtual,
-                "Trimestre:",
+                "| Trimestre:",
                 numero
             );
 
 
             /*
-             * EXEMPLO:
+             * COLOQUE OS LINKS DOS SEUS ARQUIVOS AQUI.
              *
-             * window.location.href =
-             *     "./7ano/1-trimestre.html";
+             * Exemplo:
              *
-             * Você pode colocar os caminhos
-             * reais aqui depois.
+             * if (turmaAtual === "7" && numero === 1) {
+             *     window.location.href =
+             *         "./7ano/1-trimestre.html";
+             * }
              */
 
         }
